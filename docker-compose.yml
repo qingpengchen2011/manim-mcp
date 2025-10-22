@@ -2,10 +2,7 @@ version: '3.8'
 
 services:
   manim-mcp:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: manim-mcp-server
+    image: manim-mcp-server:latest
     ports:
       - "8001:8001"
     volumes:
